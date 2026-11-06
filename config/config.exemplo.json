@@ -1,0 +1,44 @@
+{
+  "ambiente": "producao",
+  "uf_autor": "SP",
+
+  "certificados": [
+    {
+      "arquivo": "certificados/certificado.pfx",
+      "senha": "",
+      "senha_variavel_ambiente": "DANFE_SENHA_CERT",
+      "cnpj": "",
+      "uf": "SP"
+    }
+  ],
+
+  "sql_server": {
+    "servidor": "NOME_DO_SERVIDOR",
+    "banco": "NOME_DO_BANCO",
+    "driver": "ODBC Driver 17 for SQL Server",
+    "autenticacao_windows": true,
+    "usuario": "",
+    "senha": "",
+    "senha_variavel_ambiente": "DANFE_SENHA_SQL",
+    "consulta_carga": "SELECT XML_DA_NOTA FROM TABELA_NOTAS WHERE NUMERO_CARGA = ? ORDER BY NUMERO_NOTA",
+    "ativo": false,
+    "consulta": "SELECT XML_DA_NOTA FROM TABELA_NOTAS WHERE CHAVE_NFE = ?"
+  },
+
+  "consultar_protocolo": true,
+  "gerar_sem_protocolo": false,
+  "intervalo_consulta_protocolo_segundos": 1.0,
+  "incluir_canceladas_no_pdf_da_carga": false,
+
+  "pastas_xml": [],
+  "manifestar_ciencia_automaticamente": false,
+  "intervalo_entre_consultas_segundos": 2,
+  "tentativas_conexao": 3,
+  "timeout_segundos": 30,
+  "verificar_ssl": true,
+
+  "logo_emitente": "",
+  "nome_arquivo_pdf": "DANFE_{numero}_{chave}.pdf",
+  "remover_do_texto_produto": [],
+  "mover_entradas_processadas": true
+}

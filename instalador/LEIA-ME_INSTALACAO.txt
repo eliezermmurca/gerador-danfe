@@ -1,0 +1,28 @@
+﻿GERADOR DE DANFE - INSTALAÇÃO
+=============================
+
+1. Extraia o pacote inteiro numa pasta (ou use a pasta clonada do repositório).
+2. (Opcional) Coloque o certificado A1 (.pfx) ao lado do INSTALAR.bat:
+   ele será copiado automaticamente.
+3. Dê duplo clique em INSTALAR.bat e aguarde.
+   - Se o Windows mostrar "O Windows protegeu o computador", clique em
+     "Mais informações" > "Executar assim mesmo".
+   - Se o Python não estiver instalado, o instalador baixa e instala
+     a versão oficial (python.org). É preciso ter internet.
+4. Ao terminar, o programa abre. Na aba "Configurações":
+   - selecione o certificado (.pfx) e digite a senha (fica gravada,
+     protegida pelo Windows, só para este usuário e computador);
+   - informe servidor, banco e login do SQL Server e clique em
+     "Salvar e testar conexão".
+   - Ajuste a consulta da carga (sql_server.consulta_carga) em
+     config\config.json conforme o banco do seu ERP.
+5. Pronto: na aba "Gerar DANFEs", digite o número da carga e tecle Enter.
+
+O programa fica em C:\GeradorDANFE (ou na pasta do usuário, se não houver
+permissão em C:\). Atalhos criados na Área de Trabalho: "Gerador de DANFE"
+e "DANFEs das Cargas".
+
+ATUALIZAR: rode o INSTALAR.bat da versão nova. Configurações, certificado,
+senhas e DANFEs já gerados são mantidos.
+
+DESINSTALAR: apague a pasta C:\GeradorDANFE e os atalhos.

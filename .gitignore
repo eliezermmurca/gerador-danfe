@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# Configuração local e segredos
+config/config.json
+config/*.dat
+config/*.tmp
+config/cadeia_ssl.pem
+config/icp_brasil/
+config/.em_execucao.lock
+certificados/*
+!certificados/_LEIA.md
+*.pfx
+*.p12
+
+# Dados de notas fiscais e arquivos gerados
+entrada/*
+!entrada/_LEIA.md
+xml_manual/*
+!xml_manual/_LEIA.md
+acervo_xml/*
+!acervo_xml/_LEIA.md
+saida/*
+!saida/_LEIA.md
+erro_tela.txt
+
+# Pacotes
+dist/
+*.zip
